@@ -17,7 +17,7 @@ function AdminDashboard() {
         try {
             const confirmdata = window.confirm(`Are you sure want to delete`);
             if (confirmdata) {
-                await axios.delete(`http://localhost:4000/remove-product/${id}`,{
+                await axios.delete(`https://webcode2-backend.onrender.com/remove-product/${id}`,{
                     headers: {
                       authorization: `${window.localStorage.getItem("token")}`,
                     },
@@ -31,7 +31,7 @@ function AdminDashboard() {
 
     let getProducts = async () => {
         try {
-            const products = await axios.get("http://localhost:4000/products",{
+            const products = await axios.get("https://webcode2-backend.onrender.com/products",{
                 headers: {
                   authorization: `${window.localStorage.getItem("token")}`,
                 },

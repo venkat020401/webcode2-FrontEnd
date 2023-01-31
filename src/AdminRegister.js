@@ -43,7 +43,7 @@ function AdminRegister() {
   
       onSubmit: async (values) => {
         try {
-          await axios.post("http://localhost:4000/admin-register", values
+          await axios.post("https://webcode2-backend.onrender.com/admin-register", values
           );
           navigate("/")
         } catch (error) {

@@ -19,7 +19,7 @@ function UserDashboard() {
   //get all products
   const getproducts = async () => {
     try {
-      const products = await axios.get("http://localhost:4000/products"
+      const products = await axios.get("https://webcode2-backend.onrender.com/products"
         , {
           headers: {
             authorization: `${window.localStorage.getItem("token")}`,
@@ -36,7 +36,7 @@ function UserDashboard() {
   //add to cart
   const AddtoCart = async (id) => {
     try {
-      const user = await axios.post(`http://localhost:4000/addtocart/${id}`);
+      const user = await axios.post(`https://webcode2-backend.onrender.com/addtocart/${id}`);
       get_cart_items();
     } catch (error) {
       console.log(error);
@@ -46,7 +46,7 @@ function UserDashboard() {
   // get cart items
   const get_cart_items = async () => {
     try {
-      const cartItems = await axios.get("http://localhost:4000/get_cart_items"
+      const cartItems = await axios.get("https://webcode2-backend.onrender.com/get_cart_items"
         ,{
           headers: {
             authorization: `${window.localStorage.getItem("token")}`,
@@ -62,7 +62,7 @@ function UserDashboard() {
   //remove cart item
   const removeCart = async (id) => {
     try {
-      const removeitem = await axios.delete(`http://localhost:4000/remove_cart_item/${id}`
+      const removeitem = await axios.delete(`https://webcode2-backend.onrender.com/remove_cart_item/${id}`
         ,{
           headers: {
             authorization: `${window.localStorage.getItem("token")}`,

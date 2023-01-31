@@ -51,7 +51,7 @@ function AddProduct() {
 
             try {
                 setLoading(true)
-                await axios.post("http://localhost:4000/add-product", value,{
+                await axios.post("https://webcode2-backend.onrender.com/add-product", value,{
                     headers: {
                       authorization: `${window.localStorage.getItem("token")}`,
                     },

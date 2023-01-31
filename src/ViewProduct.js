@@ -17,7 +17,7 @@ function ViewProduct() {
 
     let getProduct = async () => {
         try {
-            const product = await axios.get(`http://localhost:4000/get-product/${params.id}`);
+            const product = await axios.get(`https://webcode2-backend.onrender.com/get-product/${params.id}`);
             setList(product.data);
             setLoading(false);
         }

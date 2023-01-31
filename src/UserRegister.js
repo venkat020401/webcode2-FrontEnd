@@ -43,7 +43,7 @@ function UserRegister() {
 
     onSubmit: async (values) => {
       try {
-        await axios.post("http://localhost:4000/user-register", values
+        await axios.post("https://webcode2-backend.onrender.com/user-register", values
         );
         navigate("/")
       } catch (error) {

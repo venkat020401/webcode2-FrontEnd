@@ -17,7 +17,7 @@ function EditProduct() {
 
     let getProductData = async () => {
         try {
-            const product = await axios.get(`http://localhost:4000/get-product/${params.id}`);
+            const product = await axios.get(`https://webcode2-backend.onrender.com/get-product/${params.id}`);
             MyFormik.setValues(product.data[0]);
 
         } catch (error) {
@@ -67,7 +67,7 @@ function EditProduct() {
         onSubmit: async (values) => {
             try {
                 setLoading(true);
-                await axios.put(`http://localhost:4000/update-product/${params.id}`,{
+                await axios.put(`https://webcode2-backend.onrender.com/update-product/${params.id}`,{
                     name: values.name,
                     vendor: values.vendor,
                     price: values.price,
