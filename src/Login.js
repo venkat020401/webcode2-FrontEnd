@@ -29,7 +29,7 @@ function Login() {
         },
         onSubmit: async (values) => {
             try {
-                const admin_login = await axios.post("http://localhost:4000/admin-login", values);
+                const admin_login = await axios.post("https://webcode2-backend.onrender.com/admin-login", values);
                 window.localStorage.setItem("token", admin_login.data.token);
                 navigate("/admin-dashboard");
 
@@ -63,7 +63,7 @@ function Login() {
         },
         onSubmit: async (values) => {
             try {
-                const user_login = await axios.post("http://localhost:4000/user-login", values);
+                const user_login = await axios.post("https://webcode2-backend.onrender.com/user-login", values);
                 window.localStorage.setItem("token", user_login.data.token);
                 navigate("/user-dashboard");
 
