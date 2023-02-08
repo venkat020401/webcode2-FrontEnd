@@ -106,11 +106,11 @@ function Login() {
                                                     <span className='ml-2'>{admin_formik.errors.password}</span>
                                                 </div>
                                                 <div class="form-group">
-                                                    <div class="custom-control custom-checkbox small">
+                                                    {/* <div class="custom-control custom-checkbox small">
                                                         <input type="checkbox" class="custom-control-input" id="customCheck" />
                                                         <label class="custom-control-label" for="customCheck">Remember
                                                             Me</label>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 <input type={"submit"} value={"Login"} class="btn btn-primary btn-user btn-block" />
 
@@ -143,11 +143,11 @@ function Login() {
                                                     <span className='ml-2'>{user_formik.errors.password}</span>
                                                 </div>
                                                 <div class="form-group">
-                                                    <div class="custom-control custom-checkbox small">
+                                                    {/* <div class="custom-control custom-checkbox small">
                                                         <input type="checkbox" class="custom-control-input" id="customCheck" />
                                                         <label class="custom-control-label" for="customCheck">Remember
                                                             Me</label>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 <input type={"submit"} value={"Login"} class="btn btn-primary btn-user btn-block" />
 
